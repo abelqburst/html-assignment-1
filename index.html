@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+
+            <form>
+            <h4>Enter The Values</h4>
+            <div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                <input class="form-control" id="inputName" placeholder="Name">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputRange" class="col-sm-2 col-form-label">Favourite Number</label>
+                <div class="col-sm-8">
+                <input class="form-control-range" id="inputRange" type="range" min=1 max=20 step=1>
+                </div>
+                <div class="col-sm-2" id="rangeValDisplay"></div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="radioMale" value="Male" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                            Male
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="radioFemale" value="Female">
+                            <label class="form-check-label" for="gridRadios2">
+                            Female
+                            </label>
+                        </div>
+                   
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button id="submit" type="submit" class="btn btn-primary" >Sign in</button>
+                </div>
+            </div>
+            </form>
+            <h4>Loaded Values</h4>
+            <div class="row">
+                <label class="col-sm-2 col-form-label" for="sessionName">Name</label>
+                <div class="col-sm-10" id="sessionName"></div>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 col-form-label" for="sessionEmail">Email</label>
+                <div class="col-sm-10" id="sessionEmail"></div>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 col-form-label" for="sessionPassword">Password</label>
+                <div class="col-sm-10" id="sessionPassword"></div>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 col-form-label" for="sessionRange">Favourite Number</label>
+                <div class="col-sm-10" id="sessionRange"></div>
+            </div>
+            <div class="row">
+                <label class="col-sm-2 col-form-label" for="sessionGender">Gender</label>
+                <div class="col-sm-10" id="sessionGender"></div>
+            </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
